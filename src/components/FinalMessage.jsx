@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import ussImage from '../assets/uss.png';
 
-const FinalMessage = ({ onReplay }) => {
+const FinalMessage = () => {
     useEffect(() => {
         const duration = 5 * 1000;
         const animationEnd = Date.now() + duration;
@@ -69,16 +69,6 @@ const FinalMessage = ({ onReplay }) => {
             >
                 Happy New Year, my love! 💕
             </motion.p>
-
-            <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 2 }}
-                onClick={onReplay}
-                className="text-sm text-gray-400 hover:text-rose-500 transition-colors uppercase tracking-widest font-bold flex items-center gap-2"
-            >
-                <span>↺</span> Replay Our Story
-            </motion.button>
         </div>
     );
 };

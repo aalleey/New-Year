@@ -35,7 +35,7 @@ function App() {
     <NightPlan key="night" onNext={nextScreen} />,
     <GoalList key="goals" onNext={nextScreen} />,
     <MessageInABottle key="bottle" onNext={nextScreen} />,
-    <FinalMessage key="final" onReplay={replay} />,
+    <FinalMessage key="final" />,
   ];
 
   return (
